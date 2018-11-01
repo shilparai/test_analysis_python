@@ -9,16 +9,18 @@ Text Analytics is the process of exploring and analyzing large amounts of unstru
 
 Step by step approach:
 
-1. Get labelled training data (structured/unstructured text data with labels (sentiments, topics)
-2. Cleaning and pre-processing 
-3. Extract features from training text data 
-4. Train parameters of classifiers
-5. Test the model on unseen data
+ 1. Get labelled training data (structured/unstructured text data with labels (sentiments, topics)
+ 2. Cleaning and pre-processing 
+ 3. Extract features from training text data (Tokenisation -  breaking up a sequence of strings into pieces such as words, keywords,         phrases, symbols and other elements called tokens)
+ 4. Train parameters of classifiers (I have tried two models Logistic Regression & Naives)
+ 5. Test the model on unseen data (Performance metrics calculation: Confusion Matrix and Classification Report)
+
 
 In this repositories, I have tried to solve two problems:
 
-1. Sentiment Analysis of Movie Reviews
-2. News headline classification
+ *1. Sentiment Analysis of Movie Reviews*
+ 
+ *2. News headline classification*
 
 # Sentiment Analysis of Movie Reviews
 
@@ -29,16 +31,8 @@ This is a two-class classification problem where user reviews are categorised in
 # News headlines classification
 
 [DATASET](https://www.kaggle.com/uciml/news-aggregator-dataset/home)
+
 This dataset contains headlines, URLs, and categories for 422,937 news stories collected by a web aggregator between March 10th, 2014 and August 10th, 2014.
 News categories are divided into business, science and technology, entertainment, and health.
 This is a multiclass classification problem. 
 Python code file: *news_headlines_classification*
-
-# Approach
-
-1. Cleaning of data: Removal of punctuations, stop-words
-2. Tokenisation -  breaking up a sequence of strings into pieces such as words, keywords, phrases, symbols and other elements called tokens
-3. Vectorisation 
-4. Model Fitting : I have tried two models Logistic Regression & Naives
-5. Cross- validation
-6. Performance metrics calculation: Confusion Matrix and Classification Report
